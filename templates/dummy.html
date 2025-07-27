@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "{{ url_for('static',filename ='css/styles.css') }}">
+        <script>
+            alert("This page is reloaded")
+        </script>
+    </head>
+    <body>
+        <h1> GET YOUR MARKS FOLKS!!</h1>
+        <form action ="/submit" method = "post">
+            <label for ="Fundamentals of Cryptography"> Fundamentals of Cryptography :</label>
+            <input type = "text" name ="Fundamentals_of_Cryptography" value=""><br>
+            
+            <label for = "Data Visualization"> Data Visualization :</label>
+            <input type = "text" name = "Data_Visualization" value= ""><br>
+            
+            <label for ="Soft Computing"> Soft Computing :</label>
+            <input type = "text"  name="Soft_Computing" value=""><br>
+
+            <label for ="Cloud Computing"> Cloud Computing :</label>
+            <input type="text" name ="Cloud_Computing" value=""><br>
+
+            <input type ="submit" value="submit">
+        </form>
+        <p> If you click the form will be submitted to server</p>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Flask Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+{% endblock %}
+
+{% block body %}
+    <h1>Hello Flask + CSS!</h1>
+{% endblock %}

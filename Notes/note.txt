@@ -1,0 +1,83 @@
+🔹 from flask import Flask
+You're importing the Flask class from the Flask library.
+Flask is the main class used to create your web application.
+
+
+
+🔹 app = Flask(__name__)
+You are creating an instance of the Flask class and naming it app.
+__name__ tells Flask where to find templates and static files.
+If you're running the script directly, __name__ will be "__main__".
+
+
+
+🔹 @app.route('/')
+This is a decorator.
+It tells Flask what URL should trigger the function below it.
+'/' is the root URL (i.e., http://localhost:5000/).
+
+
+
+🔹 def hello():
+You define a Python function named hello.
+This function will be called when someone visits the root URL.
+
+
+
+🔹 return "Hello Buddies!"
+The function returns a string: "Hello Buddies!".
+This string is what gets displayed in the browser when the route is accessed.
+
+
+
+🔹 if __name__ == "__main__":
+This line checks whether your script is being run directly (not imported as a module).
+If it is being run directly, then the code inside this block will execute.
+
+
+
+🔹 app.run(debug=True)
+This starts the Flask development web server.
+debug=True:
+Enables debug mode, which:
+Auto-reloads the server when you make code changes.
+Shows detailed error messages in the browser.
+
+
+🔸 <label for="Fundamentals of Cryptography"> ... </label>
+<label> is used to label an input field.
+The for="..." attribute is supposed to match the id of the corresponding <input> element.
+This creates an association so when you click the label, it focuses the input box.
+
+
+🔸 <input type="text" name="Fundamentals_of_Cryptography" value="">
+This creates a text input field where users can type in their answer.
+type="text" → it's a single-line text box.
+name="Fundamentals_of_Cryptography":
+This is the key used when submitting the form.
+You’ll access it in Flask with:
+
+
+🔹 <link rel="stylesheet" ... >
+This tells the browser:
+"Link to an external CSS file to style the page."
+rel="stylesheet" means this link is a stylesheet (not a favicon, script, etc.)
+
+
+🔹 href="{{ url_for('static', filename='css/styles.css') }}"
+This is Jinja2 templating used in Flask.
+It dynamically builds the correct URL path to the CSS file.
+
+
+🔸 url_for('static', filename='css/styles.css')
+static is a special route in Flask that serves static files (like CSS, JS, images).
+filename='css/styles.css' means the file is located at:
+
+
+
+✅ Common tags:
+Tag	Meaning
+<table>	Starts a table
+<tr>	Table row (row of cells)
+<th>	Table header cell (bold, centered)
+<td>	Table data cell

@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f8;
+            margin: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 50%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    
+        </style>
+    </head>
+    <body>
+        <h1>FINAL RESULTS</h1>
+        <table border = 2>
+            {% for key,value in result.items() %}
+            <tr>
+                <th>{{ key }}</th>
+                <th>{{ value }}</th>
+            </tr>
+            {% endfor %}
+
+        </table>
+        
+    </body>
+</html>
